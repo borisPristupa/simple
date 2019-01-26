@@ -7,6 +7,8 @@ This is just a bunch of projects, each containing a simple usage of some framewo
 * #### SpringJavaMail
     A Spring Boot-based application, demonstrating a simple usage of Spring API for JavaMail. Uses Google's SMTP server.
     
+    Before you start the application, you have to [allow insecure applications access](https://myaccount.google.com/lesssecureapps) the Google account you'll use as sender.
+    
 * #### SpringJMSWithRabbitMQ
     A Spring Boot-based application, demonstrating a simple usage of JMS messaging via RabbitMQ as a queue broker.
     
