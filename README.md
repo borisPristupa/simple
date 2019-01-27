@@ -42,7 +42,7 @@ This is just a bunch of projects, each containing a simple usage of some framewo
 * #### SpringAOP
     A Spring Boot-based application, demonstrating a simple usage of [Spring AOP](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop) for conditional logging.
     
-    Contains examples of a pointcut (by custom annotation), an aspect and an advice of @Before type (see the link above).
-    **Important:** AOP in Spring is done via proxying. In this project, a CGLIB proxy is used. The other common way is using JDK dynamic proxies. More about them [here](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop-proxying "About proxying mechanisms in Spring AOP").
+    Contains examples of a pointcut (by custom annotation), an aspect and an advice of @Before type (see the link above). There is also an example of "inner call", when annotated method is not affected by AOP because of being called not through a proxy, but from the same class.
+    **Important:** Spring AOP is done by proxying. In this project, a CGLIB proxy is used. The other common way is using JDK dynamic proxies. You can find more about proxying in Spring AOP [here](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop-proxying "About proxying mechanisms in Spring AOP").
     
     
