@@ -5,14 +5,14 @@ This is just a bunch of projects, each containing a simple usage of some framewo
 
 ### Current projects
 * #### SpringJavaMail
-    A Spring Boot-based application, demonstrating a simple usage of Spring API for JavaMail. Uses Google's SMTP server.
+    A Spring Boot-based application, demonstrating a simple usage of [Spring API for JavaMail](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#mail). Uses Google's SMTP server.
     
     Before you start the application, you have to [allow insecure applications access](https://myaccount.google.com/lesssecureapps) the Google account you'll use as sender.
     
 * #### SpringJMSWithRabbitMQ
     A Spring Boot-based application, demonstrating a simple usage of JMS messaging via RabbitMQ as a queue broker.
     
-    Before you start this project, [install RabbitMQ](https://www.rabbitmq.com/download.html) and [enable the JMS plugin](https://github.com/rabbitmq/rabbitmq-jms-topic-exchange#installation). 
+    Before you start this project is [install RabbitMQ](https://www.rabbitmq.com/download.html) and [enable the JMS plugin](https://github.com/rabbitmq/rabbitmq-jms-topic-exchange#installation). 
     Then you run RabbitMQ ([sudo] rabbitmq-server). You should see something like this:
     ```
                 RabbitMQ 3.6.10. Copyright (C) 2007-2017 Pivotal Software, Inc.
@@ -24,10 +24,10 @@ This is just a bunch of projects, each containing a simple usage of some framewo
                 Starting broker...
      completed with 1 plugins.
      ```
-     After the server has started, you may run the application.
+     After the server has started, you may start the application.
     
 * #### TelegramBot
-    A Spring Boot-based application, demonstrating a simple usage of [TelegramBots](https://github.com/rubenlagus/TelegramBots "Java library to create bots using Telegram Bots API"). This is actually a back-end of the bot. Note, that the application uses SOCKS5 proxy, so you should remove proxy-ing code if you don't need it.
+    A Spring Boot-based application, demonstrating a simple usage of [TelegramBots](https://github.com/rubenlagus/TelegramBots "Java library to create bots using Telegram Bots API"). This is actually a back-end of the bot. Note, that the application uses proxy, so you should remove proxy-ing code if you don't need it.
     
     Before you start the application, you have to create a bot [here](http://t.me/BotFather "BotFather"). After that, place the token and the username of the bot into your *src/main/resources/application.properties* file. 
     ###### application.properties
@@ -39,3 +39,10 @@ This is just a bunch of projects, each containing a simple usage of some framewo
     ```    
     For further investigation, check out [Telegram Bots API](https://core.telegram.org/bots/api) and [examples](https://github.com/rubenlagus/TelegramBots#example-bots).
 
+* #### SpringAOP
+    A Spring Boot-based application, demonstrating a simple usage of [Spring AOP](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop).
+    
+    Contains examples of a pointcut (by custom annotation), an aspect and an advice of @Before type (see the link above). In this project, AOP is used for conditional logging. 
+    **Important:** AOP in Spring is done via proxying. In this project CGLIB proxy is used. The other common way is using JDK dynamic proxies. More about them [here](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop-proxying "About proxying mechanisms in Spring AOP").
+    
+    
