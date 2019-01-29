@@ -17,7 +17,7 @@ public class Business {
     void logic1() {
         logger.info("Executing Business.logic1()");
         logger.info("Calling Business.logic2() from Business.logic1()");
-        logic2();
+        logic2(); // Making an "inner call" - logging will not be applied to this call, because it is done not through the proxy Spring has created
     }
 
     @Logging
