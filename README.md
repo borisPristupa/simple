@@ -13,7 +13,7 @@ This is just a bunch of projects, each containing a simple usage of some Java te
     A Spring Boot-based application, demonstrating a simple usage of JMS messaging via RabbitMQ as a queue broker.
     
     Before you start this project, [install RabbitMQ](https://www.rabbitmq.com/download.html) and [enable the JMS plugin](https://github.com/rabbitmq/rabbitmq-jms-topic-exchange#installation). 
-    Then you run RabbitMQ ([sudo] rabbitmq-server). You should see something like this:
+    Then you run RabbitMQ (``[sudo] rabbitmq-server``). You should see something like this:
     ```
                 RabbitMQ 3.6.10. Copyright (C) 2007-2017 Pivotal Software, Inc.
   ##  ##      Licensed under the MPL.  See http://www.rabbitmq.com/
@@ -27,7 +27,7 @@ This is just a bunch of projects, each containing a simple usage of some Java te
      After the server has started, you may run the application.
     
 * #### TelegramBot
-    A Spring Boot-based application, demonstrating a simple usage of [TelegramBots](https://github.com/rubenlagus/TelegramBots "Java library to create bots using Telegram Bots API"). This is actually the back-end of the bot. Note, that the application uses SOCKS5 proxy, so you should remove proxying code if you don't need it.
+    A Spring Boot-based application, demonstrating a simple usage of [TelegramBots](https://github.com/rubenlagus/TelegramBots "Java library to create bots using Telegram Bots API") for creating a primitive Telegram bot. This is actually the back-end of the bot. Note, that the application uses SOCKS5 proxy, so you should remove proxying code if you don't need it.
     
     Before you start the application, you have to create a bot [here](http://t.me/BotFather "BotFather"). After that, place the token and the username of the bot into your *src/main/resources/application.properties* file. 
     ###### application.properties
@@ -42,9 +42,15 @@ This is just a bunch of projects, each containing a simple usage of some Java te
 * #### SpringAOP
     A Spring Boot-based application, demonstrating a simple usage of [Spring AOP](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop) for conditional logging.
     
-    Contains examples of a pointcut (by custom annotation), an aspect and an advice of @Before type (see the link above). There is also an example of an "inner call" - that is when annotated method is not affected by AOP because of being called not through a proxy, but from the same class.
-    **Important:** Spring AOP is done by proxying. In this project, a CGLIB proxy is used. The other common way is using JDK dynamic proxies. You can find more about proxying in Spring AOP [here](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop-proxying "About proxying mechanisms in Spring AOP").
+    Contains examples of a pointcut (by custom annotation), an aspect and an advice of ``@Before`` type (see the link above). There is also an example of an "inner call" - that is when annotated method is not affected by AOP because of being called not through a proxy, but from the same class.
+    **Important:** Spring AOP is done by proxying. In this project, a CGLIB proxy is used. The other common way is using JDK dynamic proxies. [Here](https://docs.spring.io/spring/docs/current/spring-framework-reference/core.html#aop-proxying "About proxying mechanisms in Spring AOP") you can find more about proxying in Spring AOP.
     
+* #### SpringSecurity
+    A Spring Boot-based application, demonstrating a simple usage of [Spring Security](https://spring.io/guides/topicals/spring-security-architecture) for authentication and authorization.
+    
+    Contains examples of a custom ``AuthenticationManager`` and methods annotated by ``@Secured`` and ``@PreAuthorized``.
+    
+---
 ### How to work with this repository
 #### How to get one project 
 For example, you want to download SpringAOP project. There is absolutely **no need in cloning whole repository**, you can just do the following:
