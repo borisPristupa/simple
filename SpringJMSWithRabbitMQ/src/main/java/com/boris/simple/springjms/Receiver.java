@@ -13,8 +13,8 @@ public class Receiver {
         log.info("Received " + message);
     }
     /*
-    JmsTemplate по умолчанию queue, а не topic, поэтому будет юзаться один из этих методов случайным методом.
-    Сделать его topic низя из-за преколов RabbitMQ
+    JmsTemplate uses queue instead of topic (JMS terminology), so that only one of these methods will be used.
+    The used method is picked randomly.
      */
     @JmsListener(destination = "customDestination")
     public void receive2(Email message) {
