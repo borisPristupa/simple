@@ -27,7 +27,7 @@ This is just a bunch of projects, each containing a simple usage of some Java te
      After the server has started, you may run the application.
     
 * #### TelegramBot
-    A Spring Boot-based application, demonstrating a simple usage of [TelegramBots](https://github.com/rubenlagus/TelegramBots "Java library to create bots using Telegram Bots API") for creating a primitive Telegram bot. This is actually the back-end of the bot. Note, that the application uses SOCKS5 proxy, so you should remove proxying code if you don't need it.
+    A Spring Boot-based application, demonstrating a simple usage of [TelegramBots](https://github.com/rubenlagus/TelegramBots "Java library to create bots using Telegram Bots API") for creating a primitive Telegram long polling bot. This is actually the back-end of the bot. Note, that the application uses SOCKS5 proxy, so you should remove proxying code if you don't need it.
     
     Before you start the application, you have to create a bot [here](http://t.me/BotFather "BotFather"). After that, place the token and the username of the bot into your *src/main/resources/application.properties* file. 
     ###### application.properties
@@ -49,6 +49,9 @@ This is just a bunch of projects, each containing a simple usage of some Java te
     A Spring Boot-based application, demonstrating a simple usage of [Spring Security](https://spring.io/guides/topicals/spring-security-architecture) for authentication and authorization.
     
     Contains examples of a custom ``AuthenticationManager`` and methods annotated by ``@Secured`` and ``@PreAuthorized``.
+    
+* #### Jabber
+    A Spring Boot-based application, demonstrating a simple usage of [Smack API](https://igniterealtime.org/projects/smack/) for [XMPP protocol](https://xmpp.org/about/technology-overview.html) for sending jabber messages. Messages are sent via [jabber.hot-chilli.net](http://jabber.hot-chilli.net) - a free Jabber/XMPP service for everybody.
     
 ---
 ### How to work with this repository
