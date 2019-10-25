@@ -53,6 +53,9 @@ This is just a bunch of projects, each containing a simple usage of some Java te
 * #### Jabber
     A Spring Boot-based application, demonstrating a simple usage of [Smack API](https://igniterealtime.org/projects/smack/) for [XMPP protocol](https://xmpp.org/about/technology-overview.html) for sending jabber messages. Messages are sent via [jabber.hot-chilli.net](http://jabber.hot-chilli.net) - a free Jabber/XMPP service for everybody.
     
+* #### JSP
+    A Java EE application, using [servlets](https://www.oracle.com/technetwork/java/index-jsp-135475.html) and [JSP](https://www.oracle.com/technetwork/java/jsp-138432.html). Demonstrates a simple usage of servlets, filters, web.xml configuration, JSP, HttpSession and useBean action.
+    
 ---
 ### How to work with this repository
 #### How to get one project 
